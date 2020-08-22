@@ -1,0 +1,18 @@
+@
+:root {
+	--white: #fff;
+	--black: #000;
+	--green: rgb(148,189,87);
+}
+/********   Basic styles  UNIVERZALNI SELEKTOR   *********/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	font-family: 'Quicksand,sans-serif';
+	font-size:var(--font);
+	line-height: 1.6;
+	background:var(--white);
+}
