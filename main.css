@@ -29,14 +29,16 @@ header{
 
 header ul li{
 	list-style:none;
+	display:inline-block;
+	
 }
 header ul li a{
 	color: var(--white);
+	padding:20px 40px;
 	text-decoration:none;
 	text-transform:uppercase;
 	font-size:1.6rem;
 	background: rgba(0,0,0,.5);
-	display:inline-block;
 	float:left;
 }
 
@@ -68,6 +70,9 @@ article{
 	float:left;
 	height:300px;
 	padding:150px 20px;
+}
+article h4{
+	text-transform: uppercase;
 }
 article button{
 	padding:15px;
