@@ -4,11 +4,12 @@
 	--black: #000;
 	--green: rgb(148,189,87);
 	--lightgray: #f3f3f3;
+	--transition: .4 ease;
 }
 /********   Basic styles  UNIVERZALNI SELEKTOR   *********/
 *{
-	margin:0;
-	padding:0;
+	margin:0px;
+	padding:0px;
 	box-sizing:border-box;
 }
 body{
@@ -26,11 +27,21 @@ header{
 	color: var(--white);
 	text-align:center;
 }
-
+.container{
+	width:100%;
+}
+.conteiner::after{
+	display:block;
+	content:"";
+	clear:both;
+}
+header ul{
+	display:block;
+	background: rgba(0,0,0,.5);
+}
 header ul li{
 	list-style:none;
 	display:inline-block;
-	
 }
 header ul li a{
 	color: var(--white);
@@ -38,32 +49,30 @@ header ul li a{
 	text-decoration:none;
 	text-transform:uppercase;
 	font-size:1.6rem;
-	background: rgba(0,0,0,.5);
 	float:left;
 }
-
+header ul li a:hover{
+	color: var(--green);
+	transition: var(--transition);
+}
 header h1{
 	display:inline-block;
 	background: var(--green);
 	color: var(--white);
 	text-transform:uppercase;
 	padding:0px 30px;
+	margin-top: 70px;
 	font-size: 4rem;
 }
 header h3{
-	padding-top:30px;
+	padding-top:50px;
 	font-size: 2rem;
 }
 header p{
-	padding-top:30px;
+	padding-top:70px;
 	font-size: 1.6rem;
 }
-/********     SECTION      *********/
-section{
-	width:100%;
-	display:block;
-}
-
+/********     ABOUT      *********/
 article{
 	width:50%;
 	font-size:1.2rem;
@@ -79,4 +88,7 @@ article button{
 	color: var(--green);
 	border:1px solid var(--green);
 }
-
+/********     TEAM      *********/
+section:nth-child(2){
+	background: var(--green);
+}
