@@ -1,10 +1,12 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;700&display=swap');
 :root {
 	--white: #fff;
 	--black: #000;
 	--green: rgb(148,189,87);
 	--lightgray: #f3f3f3;
+	--darkgray: rgb(105,105,105);
 	--transition: .4 ease;
+	--font: 16px;
 }
 /********   Basic styles  UNIVERZALNI SELEKTOR   *********/
 *{
@@ -13,10 +15,10 @@
 	box-sizing:border-box;
 }
 body{
-	font-family: 'Quicksand,sans-serif';
+	font-family:'Heebo', sans-serif;
 	font-size:var(--font);
 	line-height: 1.6;
-	background:var(--lightgray);
+	background: var(--lightgray);
 }
 /********     HEADER      *********/
 header{
@@ -73,6 +75,7 @@ header p{
 	font-size: 1.6rem;
 }
 /********     ABOUT      *********/
+
 article{
 	width:50%;
 	font-size:1.2rem;
@@ -89,6 +92,83 @@ article button{
 	border:1px solid var(--green);
 }
 /********     TEAM      *********/
-section:nth-child(2){
+.team{
 	background: var(--green);
+	text-align: center;
 }
+.team h3{
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: var(--white);
+}
+.team p{
+	color: var(--white);
+	padding: 30px 0px;
+	font-size: 1.6rem;
+}
+.team button{
+	color: var(--white);
+	text-transform: uppercase;
+	background: var(--green);
+	border:1px solid var(--white);
+	padding: 15px;
+	margin-bottom: 70px;
+}
+.services{
+	text-align: center;
+	background: var(--white);
+}
+.services h3{
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: var(--darkgray);
+}
+.services p{
+	color: var(--darkgray);
+	padding: 30px 0px;
+	font-size: 1.6rem;
+}
+.usluge{
+	color: var(--darkgray);
+	background: var(--white);
+}
+.usluge article{
+	background: var(--white);
+}
+/********     FOOTER      *********/
+footer{
+	background: rgb(45,45,45);
+	text-align: center;
+	
+}
+footer h3{
+	color: var(--white);
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	padding-top: 70px;
+	font-size: 2rem;
+}
+footer p{
+	color: var(--darkgray);
+	padding: 30px 0px;
+	font-size: 1.6rem;
+}
+footer li{
+	display:inline-block;
+	color: var(--darkgray);
+	font-size: 2rem;
+	padding: 0px 20px;
+	padding-bottom: 15px;
+}
+footer hr{
+	width:70%;
+	margin:auto;
+	border: 1px solid var(--darkgray);
+}
+footer h5{
+	color: var(--darkgray);
+	font-size: 1.2rem;
+	padding-top: 20px;
+	padding-bottom: 70px;
+}
+/********     RESPONSIVE      *********/
